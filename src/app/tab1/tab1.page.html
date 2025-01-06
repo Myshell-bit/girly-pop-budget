@@ -1,15 +1,16 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title> Tab 1 </ion-title>
+    <ion-title> Budget </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <h1 class="balance">{{balance}}</h1>
+  <div class="control-container">
+    <input class="balance-input" [(ngModel)]="wah" type="number" />
+  </div>
+  <div class="action-buttons">
+    <button (click)="addToBalance(wah)">Add</button>
+    <button (click)="deductFromBalance(wah)">Deductible</button>
+  </div>
 </ion-content>
