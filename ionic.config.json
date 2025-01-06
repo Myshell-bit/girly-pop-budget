@@ -1,0 +1,7 @@
+{
+  "name": "Girly Pop Budget",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
